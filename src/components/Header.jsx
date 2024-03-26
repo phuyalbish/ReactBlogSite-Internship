@@ -43,10 +43,10 @@ const Header = () => {
             <h3>Webodle Inc.</h3>
         </div>
         {isNavShowing && <ul className="navbar_menu"> 
+            <li><Link to="/profile/Bishal"  onClick={closeNavHandler}>Bishal Phuyal</Link></li>
             <li><Link to="/writer"  onClick={closeNavHandler}>Writers</Link></li>
             <li><Link to="/create"  onClick={closeNavHandler}>Create Post</Link></li>
             <li><Link to="/logout"  onClick={closeNavHandler}>Logout</Link></li>
-            <li><Link to="/profile/Bishal"  onClick={closeNavHandler}>Bishal Phuyal</Link></li>
             <li className="nightlightli" onClick={() => setIsNightMode(!isNightMode)}>
               {
                 isNightMode ? <MdOutlineLightMode class="NightLight" onClick={LightMode}/> : <MdOutlineNightlight class="NightLight" onClick={NightMode}/>
