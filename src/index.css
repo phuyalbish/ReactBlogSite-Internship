@@ -537,7 +537,92 @@ input, select, textarea{
   height:10rem !important;
 }
 
-/* Dark MOde */
+/* Dark MOde   */
 .NightLight{
   font-size: 20px;
+}
+
+
+
+.nav_toggle-btn{
+  font-size: 20px;
+  display:none;
+}
+
+/* ....................Media Queries....................... */
+
+@media screen and (max-width: 800px){
+  h1{
+    font-size: 1.5rem;
+
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  .container{
+    width: var(--container-width-mediun)
+  }
+  .navbar_container{
+    position: relative;
+    justify-content: space-around;
+  }
+  .navbar_menu{
+    background: var(--colorwhite);
+    position:absolute;
+    top: 5rem;
+    right:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    padding:20px;
+    border: 1px solid var(--colorborder);
+    border-radius: var(--radius-4);
+
+  }
+  .navbar_menu li{
+    width: 100%;
+    border: 1px solid var(--colorborder);
+    border-radius: var(--radius-4);
+    margin:2px;
+    padding:5px;
+    animation:dropdown 500ms ease forwards;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+
+  }
+  .navbar_menu li a {
+    background: transparent;
+    background:var(--color-white);
+    padding: 0.85rem 2.5rem;
+  }
+  .nightlightli{
+    border: 1px solid var(--colorgray-9) !important;
+    
+    background: var(--colorgray-9) !important;
+    display: flex;
+    justify-content: center;
+  }
+  /* .NightLight{
+    text-align: center;
+    border:1px solid red;
+  } */
+  .nav_toggle-btn{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.5rrem;
+    cursor: pointer;
+  }
+
+  @keyframes dropdown {
+    
+     to{
+      opacity: 1;
+      transform: rotateX(0);
+     }
+  }
 }
