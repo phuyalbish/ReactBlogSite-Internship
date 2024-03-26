@@ -103,6 +103,7 @@ section{
   color: var(--colorprimary);
   font-size: 0.75rem;
   font-weight: 400;
+  border: 1px solid var(--colorborder);
 }
 
 .btn.sm {
@@ -164,6 +165,13 @@ nav{
   display:flex;
   align-items: center;
   gap: 3rem;
+}
+
+.profile_img{
+  width:2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid var(--colorborder)
 }
 
 .toggleNavBar{
@@ -269,6 +277,10 @@ flex-wrap: wrap;
 .post_thumbnail{
   overflow: hidden;
   height: 16rem;
+  
+}
+.post_thumbnail_main_img{
+  height:300px;
 }
 .post__thumbnail img{
   border-radius: var(--radius-3);
@@ -301,7 +313,13 @@ flex-wrap: wrap;
 .post_writer_avatar img{
     width: 2.5rem;
     aspect-ratio: 1/1;
-    border-radius: 100%;
+    border-radius: 20%;
+    border:1px solid var(--colorborder)
+}
+.post_writer_details{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 
@@ -366,6 +384,7 @@ input, select, textarea{
   resize: none;
 }
 .form_error-message{
+  display:hidden;
   background: var(--colorred);
   color: var(--colorwhite);
   font-size: 0.8rem;

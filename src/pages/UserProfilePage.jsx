@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import Avatar from '../images/avatar2.jpg'
+import Profile  from '../images/profile8.jpg';
 import { FaRegEdit } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 
 const UserProfilePage = () => {
-  const [avatar, setAvatar] = useState(Avatar)
+  const [avatar, setAvatar] = useState(Profile)
   const[name, setName] = useState()
   const[email, setEmail] = useState()
   const[currenttpassword, setCurrentPassword] = useState()
@@ -19,7 +19,7 @@ const UserProfilePage = () => {
         <div className="profile_details">
           <div className="avatar_wrapper">
               <div className="profile_avatar">
-                <img src={Avatar} alt="" />
+                <img src={Profile} alt="" />
               </div>
               { /* Form to update */}
               <form action="" className="avatar_form">

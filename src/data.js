@@ -1,25 +1,25 @@
    
-import Thumb1 from './images/blog1.jpg';
-import Thumb2 from './images/blog2.jpg';
-import Thumb3 from './images/blog3.jpg';
-import Thumb4 from './images/blog4.jpg';
-import Thumb5 from './images/blog5.jpg';
-import Thumb6 from './images/blog6.jpg';
-import Thumb7 from './images/blog7.jpg';
-import Thumb8 from './images/blog8.jpg';
-import Thumb9 from './images/blog9.jpg';
-import Thumb10 from './images/blog0.jpg';
+import Thumb1 from './images/thumb1.jpg';
+import Thumb2 from './images/thumb2.jpg';
+import Thumb3 from './images/thumb3.jpg';
+import Thumb4 from './images/thumb4.jpg';
+import Thumb5 from './images/thumb5.jpg';
+import Thumb6 from './images/thumb6.jpg';
+import Thumb7 from './images/thumb7.jpg';
+import Thumb8 from './images/thumb8.jpg';
+import Thumb9 from './images/thumb9.jpg';
+import Thumb10 from './images/thumb10.jpg';
 
-import writer10 from './images/avatar10.jpg';
-import writer1 from './images/avatar1.jpg';
-import writer2 from './images/avatar2.jpg';
-import writer3 from './images/avatar3.jpg';
-import writer4 from './images/avatar4.jpg';
-import writer5 from './images/avatar5.jpg';
-import writer6 from './images/avatar6.jpg';
-import writer7 from './images/avatar7.jpg';
-import writer8 from './images/avatar8.jpg';
-import writer9 from './images/avatar9.jpg';
+import writer10 from './images/profile10.jpg';
+import writer1 from './images/profile1.jpg';
+import writer2 from './images/profile2.jpg';
+import writer3 from './images/profile3.jpg';
+import writer4 from './images/profile4.jpg';
+import writer5 from './images/profile5.jpg';
+import writer6 from './images/profile6.jpg';
+import writer7 from './images/profile7.jpg';
+import writer8 from './images/profile8.jpg';
+import writer9 from './images/profile9.jpg';
 
 export const POST_CATEGORIES = ["Agriculture", "Business", "Education", "Entertainment", "Art", "Investment", "Uncategorized"]
 

@@ -1,31 +1,44 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import PostWriter from '../components/PostWriter'
-import Thumb from '../images/blog1.jpg'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import {DUMMY_JSON} from '../data.js'
+import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const PostDetails = () => {
 
+  const navigate = useNavigate();
+
+const { id } = useParams();
+  const postid = parseInt(id);
+  const [posts, setPosts] = useState(DUMMY_JSON);
+    useEffect(() => {
+       const filteredPost = DUMMY_JSON.find(user => user.id == id);
+        setPosts(filteredPost);
+    }, [postid]);
+
+  const userId = posts.userId;
   return (
     <section className="post-detail">
       <div className="container post-detail_container">
         <div className="titleWithBack">
-          <Link to="/"><IoMdArrowRoundBack/></Link>
+          <Link onClick={() => navigate(-1)}><IoMdArrowRoundBack /></Link>
 
         <div className="title">
-          <h1>This is the title.</h1>
-        <p>This is the subtitle Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur inventore quidem, aliquam nemo, laudantium reiciendis harum delectus vero quam rerum officiis nesciunt provident repellendus iusto praesentium impedit optio? At, ad.</p>
+          <h1>{posts.title}</h1>
+        <p>{posts.body}</p>
         </div>
         </div>
         <div className="post-detail_header">
-          <PostWriter userId={1}/>
+          <PostWriter userId = {3} />
           <div className="post-detail_buttons">
                 <Link to={`/posts/writer/edit`} className='btn sn primary'>Edit</Link>
                 <Link to={`/posts/writer/delete`} className='btn sn danger'>Delete</Link>
           </div>
         </div>
         <div className="post-detail_thumbnail">
-          <img src={Thumb} alt="" />
+          <img src={posts.thumbnail} alt="" />
         </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti quasi omnis unde nulla quae expedita ducimus veniam, illo earum ipsam facere rem repellat aliquid similique illum, saepe beatae. Omnis doloremque placeat adipisci et distinctio eveniet? Praesentium omnis cupiditate repellat, accusamus ad natus perferendis quidem perspiciatis quasi harum aut amet.

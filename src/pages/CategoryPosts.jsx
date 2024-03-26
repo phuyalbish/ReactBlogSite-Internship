@@ -2,7 +2,7 @@ import React,  { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import PostItem from '../components/PostItem'
 import {DUMMY_JSON} from '../data.js'
-
+import Dropdown from 'react-bootstrap/Dropdown';
 const CategoryPosts = () => {
    const { id } = useParams();
   const [posts, setPosts] = useState(DUMMY_JSON);
