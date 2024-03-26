@@ -21,7 +21,8 @@ const Header = () => {
         </div>
         <ul className="navbar_menu"> 
             <li><Link to="/writer">Writers</Link></li>
-            
+            <li><Link to="/create">Create Post</Link></li>
+            <li><Link to="/logout">Logout</Link></li>
             <li><Link to="/profile/Bishal">Bishal Phuyal</Link></li>
         </ul>
         <button className="toggleNavBar">

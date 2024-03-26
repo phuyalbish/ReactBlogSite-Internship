@@ -13,7 +13,7 @@ function Footer() {
     <li><Link to='posts/categories/Investment'>Investment</Link></li>
  </ul>
 
- <div className="footer_copyright">All rights reserved 2024. Quantum Compliance tech</div>
+ <div className="footer_copyright">All rights reserved 2024. Webodle. Inc</div>
    </footer>
   )
 }

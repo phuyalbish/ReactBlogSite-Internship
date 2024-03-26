@@ -52,7 +52,7 @@ export const DUMMY_WRITER = [
     {
         "id": 2,
         "post": 3,
-        "Thumbnail": writer2,
+        "thumbnail": writer2,
         "name": "Ervin Howell",
         "username": "Antonette",
         "email": "Shanna@melissa.tv",
@@ -77,7 +77,7 @@ export const DUMMY_WRITER = [
     {
         "id": 3,
         "post": 3,
-        "Thumbnail": writer3,
+        "thumbnail": writer3,
         "name": "Clementine Bauch",
         "username": "Samantha",
         "email": "Nathan@yesenia.net",
@@ -102,7 +102,7 @@ export const DUMMY_WRITER = [
     {
         "id": 4,
         "post": 3,
-        "Thumbnail": writer4,
+        "thumbnail": writer4,
         "name": "Patricia Lebsack",
         "username": "Karianne",
         "email": "Julianne.OConner@kory.org",
@@ -128,7 +128,7 @@ export const DUMMY_WRITER = [
         "id": 5,
         "post": 3,
         
-        "Thumbnail": writer5,
+        "thumbnail": writer5,
         "name": "Chelsey Dietrich",
         "username": "Kamren",
         "email": "Lucio_Hettinger@annie.ca",
@@ -153,7 +153,7 @@ export const DUMMY_WRITER = [
     {
         "id": 6,
         "post": 3,
-        "Thumbnail": writer6,
+        "thumbnail": writer6,
         "name": "Mrs. Dennis Schulist",
         "username": "Leopoldo_Corkery",
         "email": "Karley_Dach@jasper.info",
@@ -179,7 +179,7 @@ export const DUMMY_WRITER = [
         "id": 7,
         
         "post": 3,
-        "Thumbnail": writer7,
+        "thumbnail": writer7,
         "name": "Kurtis Weissnat",
         "username": "Elwyn.Skiles",
         "email": "Telly.Hoeger@billy.biz",
@@ -205,7 +205,7 @@ export const DUMMY_WRITER = [
         "id": 8,
         
         "post": 3,
-        "Thumbnail": writer8,
+        "thumbnail": writer8,
         "name": "Nicholas Runolfsdottir V",
         "username": "Maxime_Nienow",
         "email": "Sherwood@rosamond.me",
@@ -231,7 +231,7 @@ export const DUMMY_WRITER = [
         "id": 9,
         
         "post": 3,
-        "Thumbnail": writer9,
+        "thumbnail": writer9,
         "name": "Glenna Reichert",
         "username": "Delphine",
         "email": "Chaim_McDermott@dana.io",
@@ -257,7 +257,7 @@ export const DUMMY_WRITER = [
         "id": 10,
         
         "post": 3,
-        "Thumbnail": writer10,
+        "thumbnail": writer10,
         "name": "Clementina DuBuque",
         "username": "Moriah.Stanton",
         "email": "Rey.Padberg@karina.biz",

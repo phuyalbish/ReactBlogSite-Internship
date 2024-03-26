@@ -10,19 +10,20 @@ function Writer() {
   const [writer, setWriter] = useState(DUMMY_WRITER);
   
   return (
-          <section className="writers">
+          <section className="authors">
       {writer.length > 0 ? <div className="container writers_container">
       {
           
       writer.map(({id, post, thumbnail, name, username, email}) => {
 
-        return <Link key={id} to={`/posts/users/${id}`}>
+        return <Link key={id} to={`/posts/users/${id}`} className='author'>
           <div className="author_avatar">
-            <img src={thumbnail} alt={`Image of ${name}`} />
+            <img src={`${thumbnail}`} alt={`Image of ${name}`} />
           </div>
           <div className="author_info">
             <h4>{name}</h4>
-            <p>{post}</p>
+            <p>@{username}</p>
+            <p>{post} posts</p>
           </div>
         </Link>
 
