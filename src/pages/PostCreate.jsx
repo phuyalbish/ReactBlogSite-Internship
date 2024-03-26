@@ -22,11 +22,14 @@ function PostCreate() {
         <form action="" className="form create-post_form">
           <input type="text" placeholder='Title' value={title} onChange={e => setTitle(e.target.value )} autoFocus/>
           <select name="category" id="" value={category} onChange={e => setCategory(e.target.value)}>
+            <option value="" disabled>Select Category</option>
             {
                 POST_CATEGORIES.map(cat => <option key={cat}>{cat}</option>)
             }
           </select>
             <ReactQuill modules={modules} format={formats} value={description} onChange={setDescription} />
+            <input type="file" name="file" id="" onChange={e=> setThumbnail(e.target.files[0])} accept='png, jpg, jpeg' />
+            <button type="submit" className='btn primary'>Create</button>
         </form>
       </div>
     </section>

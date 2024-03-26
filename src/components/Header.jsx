@@ -26,7 +26,9 @@ const Header = () => {
             <li><Link to="/create">Create Post</Link></li>
             <li><Link to="/logout">Logout</Link></li>
             <li><Link to="/profile/Bishal">Bishal Phuyal</Link></li>
-            <li><MdOutlineLightMode /></li>
+            <li ><MdOutlineLightMode class="NightLight" onClick={LightMode}/></li>
+            <li><MdOutlineNightlight class="NightLight" onClick={NightMode}/></li>
+            
         </ul>
         <button className="toggleNavBar">
           <AiOutlineClose/>
@@ -35,5 +37,15 @@ const Header = () => {
     </nav>
   )
 }
+const LightMode = () => {
+      
+}
+
+const NightMode = () => {
+    
+}
+
+
+
 
 export default Header

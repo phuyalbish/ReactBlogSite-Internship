@@ -530,3 +530,14 @@ input, select, textarea{
   display: flex;
   gap: 0.7rem;
 }
+
+.ql-editor{
+  overflow: scroll;
+  background: var(--color-white);
+  height:10rem !important;
+}
+
+/* Dark MOde */
+.NightLight{
+  font-size: 20px;
+}

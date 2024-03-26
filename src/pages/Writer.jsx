@@ -1,7 +1,7 @@
 import React,  { useState, useEffect } from 'react'
 import {DUMMY_WRITER} from '../data.js'
 
-import WriterItem from '../components/WriterItem'
+// import WriterItem from '../components/WriterItem'
 
 import { Link } from 'react-router-dom';
 
