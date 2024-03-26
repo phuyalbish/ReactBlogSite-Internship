@@ -16,7 +16,7 @@ function Writer() {
           
       writer.map(({id, post, thumbnail, name, username, email}) => {
 
-        return <Link key={id} to={`/posts/users/${id}`} className='author'>
+        return <Link key={id} to={`/posts/writer/${id}`} className='author'>
           <div className="author_avatar">
             <img src={`${thumbnail}`} alt={`Image of ${name}`} />
           </div>

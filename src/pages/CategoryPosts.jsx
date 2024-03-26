@@ -1,9 +1,18 @@
 import React,  { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom';
 import PostItem from '../components/PostItem'
 import {DUMMY_JSON} from '../data.js'
 
 const CategoryPosts = () => {
+   const { id } = useParams();
   const [posts, setPosts] = useState(DUMMY_JSON);
+    useEffect(() => {
+
+       const filteredPost = DUMMY_JSON.filter(user => user.category == id);
+        setPosts(filteredPost);
+    }, [id]);
+
+
 
 return (
     <section className="category_posts">

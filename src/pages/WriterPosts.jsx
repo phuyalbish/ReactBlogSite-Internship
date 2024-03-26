@@ -1,9 +1,19 @@
 import React,  { useState, useEffect } from 'react'
 import PostItem from '../components/PostItem'
 import {DUMMY_JSON} from '../data.js'
+import { useParams } from 'react-router-dom';
 
 const WriterPosts = () => {
+   const { id } = useParams();
+  const postid = parseInt(id);
   const [posts, setPosts] = useState(DUMMY_JSON);
+    useEffect(() => {
+
+       const filteredPost = DUMMY_JSON.filter(user => user.userId == postid);
+        setPosts(filteredPost);
+    }, [postid]);
+
+
 
 return (
     <section className="posts">

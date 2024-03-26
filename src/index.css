@@ -438,10 +438,7 @@ input, select, textarea{
   flex-direction: column;
   align-items: center;
 }
-.profile_details{
-  /* width:100%; */
 
-}
 .avatar_wrapper{
   display: flex;
   width:15rem;
@@ -608,10 +605,7 @@ input, select, textarea{
     display: flex;
     justify-content: center;
   }
-  /* .NightLight{
-    text-align: center;
-    border:1px solid red;
-  } */
+  
   .nav_toggle-btn{
     display: inline-block;
     background: transparent;
@@ -625,5 +619,25 @@ input, select, textarea{
       opacity: 1;
       transform: rotateX(0);
      }
+  }
+
+  .post-detail{
+    width: 100%;
+    background: transparent;
+  }
+  .register, .login, .create-post, .profile_container{
+    width: 100%;
+  }
+  .form.profile_form{
+    margin-top: 2.5rem;
+    padding:20px;
+    width:100%;
+  }
+  .author{
+    width: 100%;
+  }
+
+  .dashboard_post{
+    flex-direction: column;
   }
 }
