@@ -4,15 +4,16 @@ import './index.css';
 import Layout from './components/Layout';
 import Writer from './pages/Writer';
 import WriterPosts from './pages/WriterPosts';
+import CategoryPosts from './pages/CategoryPosts';
 import Categories from './pages/Categories';
 import Dashboard from './pages/Dashboard';
 import HomePage from './pages/HomePage';
-// import LoginPage from './pages/LoginPage';
-// import Logout from './pages/Logout';
-// import PostDelete from './pages/PostDelete';
+import LoginPage from './pages/LoginPage';
+import Logout from './pages/Logout';
+import PostDelete from './pages/PostDelete';
 import PostDetails from './pages/PostDetails';
 import PostEdit from './pages/PostEdit';
-// import PostCreate from './pages/PostCreate';
+import PostCreate from './pages/PostCreate';
 import Posts from './components/Posts';
 import SignUpPage from './pages/SignUpPage';
 import UserProfilePage from './pages/UserProfilePage';
@@ -27,13 +28,13 @@ const router = createBrowserRouter([{
   children:[
     {index: true, element: <HomePage/>},
     {path: "signup", element: <SignUpPage/>},
-    // {path: "login", element: <LoginPage/>},
+    {path: "login", element: <LoginPage/>},
     {path: "writer", element: <Writer/>},
     {path: "profile/:id", element: <UserProfilePage/>},
     {path: "posts/:id", element: <PostDetails/>},
-    // {path: "create", element: <PostCreate/>},
+    {path: "create", element: <PostCreate/>},
     {path: "posts/:id/edit", element: <PostEdit/>},
-    {path: "posts/categories/:id", element: <Categories/>},
+    {path: "posts/categories/:id", element: <CategoryPosts/>},
     {path: "posts/writer/:id", element: <WriterPosts/>},
     {path: "dashboard/:id", element: <WriterPosts/>},
     // {path: "logout", element: <Logout/>},

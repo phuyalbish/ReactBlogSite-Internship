@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
-const SignUpPage = () => {
 
+function LoginPage() {
   const [userData, setuserData] = useState({
-    name:'',
+    
     email:'',
     password:'',
-    password2:'',
   })
   const changeInputHandler = (e) => {
           setuserData(prevState => {
@@ -15,21 +14,19 @@ const SignUpPage = () => {
   }
   return (
     
-    <section className="register">
+    <section className="login">
       <div className="container">
-        <h2>Sign Up</h2>
-        <form action="" className="form register_form">
+        <h2>Sign In</h2>
+        <form action="" className="form login_form">
           <p className="form_error-message">This is a n error message</p>
-          <input type="text" name="name" id="" value={userData.name} placeholder="Full Name" onChange={changeInputHandler}/>
           <input type="email" name="email" id="" value={userData.email} placeholder="Email" onChange={changeInputHandler}/>
           <input type="password" name="password" id="" value={userData.password} placeholder="Password" onChange={changeInputHandler}/>
-          <input type="password" name="password2" id="" value={userData.password2} placeholder="Confirm Password" onChange={changeInputHandler}/>
-          <button type="submit" class="btn primary">Register</button>
+          <button type="submit" class="btn primary">Login</button>
         </form>
-        <small>Already have an Account? <Link to="/login">sign in</Link></small>
+        <small>Don't have an Account? <Link to="/signup">sign up</Link></small>
       </div>
     </section>
   )
 }
 
-export default SignUpPage
+export default LoginPage

@@ -16,13 +16,12 @@ import writer9 from '../images/avatar9.jpg';
 
 function PostWriter({userId}) {
    const [writer, setWriter] = useState([]);
-
+  const id = parseInt(userId);
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => {
-        // Filter the user with id 1
-        const user = data.find(user => user.id === userId);
+        const user = data.find(user => user.id === id);
         setWriter(user);
       })
       .catch(error => console.error('Error fetching data:', error));
@@ -33,18 +32,7 @@ function PostWriter({userId}) {
       <div className="post_writer_avatar">
         
 
-        <img src={
-                userId === 1 ? writer1 :
-                userId === 2 ? writer2 :
-                userId === 3 ? writer3 :
-                userId === 4 ? writer4 :
-                userId === 5 ? writer5 :
-                userId === 6 ? writer6 :
-                userId === 7 ? writer7 :
-                userId === 8 ? writer8 :
-                userId === 9 ? writer9 : 
-                userId === 10 ? writer10 :
-                writer10} alt="No Img" />
+        <img src={writer4} alt="No Img" />
       </div>
       <div className="post_writer_details">
         <h5>{writer.name}</h5>
@@ -53,5 +41,7 @@ function PostWriter({userId}) {
     </Link>
   )
 }
+
+
 
 export default PostWriter

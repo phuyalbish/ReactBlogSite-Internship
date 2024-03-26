@@ -17,7 +17,7 @@ const WriterItem = ({writerId, name, username, email}) => {
     const imgwriterid = Math.floor(writerId % 10);
     return (
 
-        <article className="post">
+        <article className="writer">
             <div className="post__thumbnail"> 
 
                <img src={imgwriterid === 0 ? writer10 :
@@ -33,7 +33,7 @@ const WriterItem = ({writerId, name, username, email}) => {
                 writer9} alt="No Img" />
                     
                 <div className="post_content">
-                    <Link to={`/posts/${writerId}`}>
+                    <Link to={`/posts/writer/${writerId}`}>
                         <h3>{name}</h3>
                     </Link>
                     <p>@{username}</p>

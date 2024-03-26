@@ -1,4 +1,5 @@
 import React,  { useState, useEffect } from 'react'
+import {DUMMY_WRITER} from '../data.js'
 
 import WriterItem from '../components/WriterItem'
 
@@ -6,22 +7,30 @@ import { Link } from 'react-router-dom';
 
 
 function Writer() {
-  const [writer, setWriter] = useState([]);
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(data => setWriter(data))
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  const [writer, setWriter] = useState(DUMMY_WRITER);
+  
   return (
-          <section className="posts">
-      <div className="container posts_container">
-        
- {
-        writer.map(({id, name, username, email, website}) => <WriterItem key={id} writerId={id} username={username} name={name} email={email}/>)
-      }
+          <section className="writers">
+      {writer.length > 0 ? <div className="container writers_container">
+      {
+          
+      writer.map(({id, post, thumbnail, name, username, email}) => {
 
-      </div>
+        return <Link key={id} to={`/posts/users/${id}`}>
+          <div className="author_avatar">
+            <img src={thumbnail} alt={`Image of ${name}`} />
+          </div>
+          <div className="author_info">
+            <h4>{name}</h4>
+            <p>{post}</p>
+          </div>
+        </Link>
+
+      })
+      }
+      </div>: 
+      <h2 className="center">No Writers Found</h2>
+      }
     </section>
   )
 }

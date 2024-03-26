@@ -5,19 +5,38 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 const PostDetails = () => {
-  return (
 
+
+  // const [posts, setPosts] = useState([]);
+  
+  //  useEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/posts')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // Filter the user with id 1
+  //       const indivisualpost = data.find(id => indivisualpost.id === userId);
+  //       setPosts(indivisualpost);
+  //     })
+  //     .catch(error => console.error('Error fetching data:', error));
+  // }, []);
+
+
+  return (
     <section className="post-detail">
       <div className="container post-detail_container">
         <div className="titleWithBack">
           <Link to="/"><IoMdArrowRoundBack/></Link>
-        
-        <h1></h1>
+
+        <div className="title">
+          <h1>This is the title.</h1>
+        <p>This is the subtitle Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur inventore quidem, aliquam nemo, laudantium reiciendis harum delectus vero quam rerum officiis nesciunt provident repellendus iusto praesentium impedit optio? At, ad.</p>
+        </div>
         </div>
         <div className="post-detail_header">
           <PostWriter userId={1}/>
           <div className="post-detail_buttons">
-
+                <Link to={`/posts/writer/edit`} className='btn sn primary'>Edit</Link>
+                <Link to={`/posts/writer/delete`} className='btn sn danger'>Delete</Link>
           </div>
         </div>
         <div className="post-detail_thumbnail">
