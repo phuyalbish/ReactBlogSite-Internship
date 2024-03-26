@@ -6,21 +6,6 @@ import { Link } from 'react-router-dom';
 
 const PostDetails = () => {
 
-
-  // const [posts, setPosts] = useState([]);
-  
-  //  useEffect(() => {
-  //   fetch('https://jsonplaceholder.typicode.com/posts')
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       // Filter the user with id 1
-  //       const indivisualpost = data.find(id => indivisualpost.id === userId);
-  //       setPosts(indivisualpost);
-  //     })
-  //     .catch(error => console.error('Error fetching data:', error));
-  // }, []);
-
-
   return (
     <section className="post-detail">
       <div className="container post-detail_container">

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo  from '../images/logo.png';
 import { FaBars } from "react-icons/fa6";
+import { MdOutlineNightlight } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
 
 
 import {AiOutlineClose} from "react-icons/ai";
@@ -24,6 +26,7 @@ const Header = () => {
             <li><Link to="/create">Create Post</Link></li>
             <li><Link to="/logout">Logout</Link></li>
             <li><Link to="/profile/Bishal">Bishal Phuyal</Link></li>
+            <li><MdOutlineLightMode /></li>
         </ul>
         <button className="toggleNavBar">
           <AiOutlineClose/>

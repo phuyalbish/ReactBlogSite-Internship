@@ -5,7 +5,6 @@ import Layout from './components/Layout';
 import Writer from './pages/Writer';
 import WriterPosts from './pages/WriterPosts';
 import CategoryPosts from './pages/CategoryPosts';
-import Categories from './pages/Categories';
 import Dashboard from './pages/Dashboard';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
@@ -47,7 +46,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
