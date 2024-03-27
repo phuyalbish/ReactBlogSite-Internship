@@ -42,10 +42,7 @@ https://jsonformatter.org/
 
 ## Screenshots
 
-![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
-![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
-![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
-![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
+![Screenshot_27-3-2024_202844_localhost](https://github.com/phuyalbish/WebodleBlogSiteFrontEndFull/assets/104910055/fc9609cb-da99-4118-bd72-9da6cecca04e)
 
 ## Environment Variables
 
