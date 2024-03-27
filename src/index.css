@@ -52,7 +52,9 @@ a{
   color: var(--colorgray-7);
   text-decoration: none;
 }
-
+p{
+  text-align: justify;
+}
 ul{
   list-style: none;
 }
