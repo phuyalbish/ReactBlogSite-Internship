@@ -19,6 +19,13 @@ import writer6 from './profile6.jpg';
 import writer7 from './profile7.jpg';
 import writer8 from './profile8.jpg';
 import writer9 from './profile9.jpg';
+import cat1 from './cat1.jpg';
+import cat2 from './cat2.jpg';
+import cat3 from './cat3.jpg';
+import cat4 from './cat4.jpg';
+import cat5 from './cat5.jpg';
+import cat6 from './cat6.jpg';
+import cat7 from './cat7.jpg';
 
 
-export {Thumb1, Thumb2, Thumb3, Thumb4, Thumb5, Thumb6, Thumb7, Thumb8, Thumb9, Thumb10,  writer1 , writer2, writer3, writer4, writer5, writer6,writer7, writer8, writer9,writer10}
+export {Thumb1, Thumb2, Thumb3, Thumb4, Thumb5, Thumb6, Thumb7, Thumb8, Thumb9, Thumb10,  writer1 , writer2, writer3, writer4, writer5, writer6,writer7, writer8, writer9,writer10, cat1, cat2, cat3, cat4,cat5, cat6, cat7}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { DUMMY_JSON } from '../data'
+import { DUMMY_POST } from '../data/postdata'
 
 const Dashboard = () => {
-  const [posts, setPosts] = useState(DUMMY_JSON)
+  const [posts, setPosts] = useState(DUMMY_POST)
   return (
     <section className="dashboard">
       {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {POST_CATEGORIES, modules, formats} from '../data.js'
-
+import {DUMMY_CATEGORY} from '../data/categorydata.js'
+import {modules, formats} from '../data/otherdata.js'
 import ReactQuill from 'react-quill';
 import  'react-quill/dist/quill.snow.css'
 
@@ -16,15 +16,15 @@ function PostCreate() {
     <section className="create-post">
       <div className="container">
         <h2>Create Post</h2>
-        <p className="form_error-message">
+        {/* <p className="form_error-message">
           This is an error message
-        </p>
+        </p> */}
         <form action="" className="form create-post_form">
           <input type="text" placeholder='Title' value={title} onChange={e => setTitle(e.target.value )} autoFocus/>
           <select name="category" id="" value={category} onChange={e => setCategory(e.target.value)}>
             <option value="" disabled>Select Category</option>
             {
-                POST_CATEGORIES.map(cat => <option key={cat}>{cat}</option>)
+                DUMMY_CATEGORY.map(cat => <option key={cat}>{cat}</option>)
             }
           </select>
             <ReactQuill modules={modules} format={formats} value={description} onChange={setDescription} />

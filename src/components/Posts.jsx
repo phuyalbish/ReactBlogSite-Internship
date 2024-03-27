@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import PostItem from './PostItem'
-import {DUMMY_JSON} from '../data.js'
+import {DUMMY_POST} from '../data/postdata.js'
 
 const Posts = () => {
-  const [posts, setPosts] = useState(DUMMY_JSON);
+  const [posts, setPosts] = useState(DUMMY_POST);
   
   //  useEffect(() => {
   //   fetch('https://jsonplaceholder.typicode.com/posts')

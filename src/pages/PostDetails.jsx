@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PostWriter from '../components/PostWriter'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import {DUMMY_JSON} from '../data.js'
+import {DUMMY_POST} from '../data/postdata.js'
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,9 +12,9 @@ const PostDetails = () => {
 
 const { id } = useParams();
   const postid = parseInt(id);
-  const [posts, setPosts] = useState(DUMMY_JSON);
+  const [posts, setPosts] = useState(DUMMY_POST);
     useEffect(() => {
-       const filteredPost = DUMMY_JSON.find(user => user.id == id);
+       const filteredPost = DUMMY_POST.find(user => user.id == id);
         setPosts(filteredPost);
     }, [postid]);
 
@@ -30,15 +30,17 @@ const { id } = useParams();
         <p>{posts.body}</p>
         </div>
         </div>
+        
+        <div className="post-detail_thumbnail">
+          <img src={posts.thumbnail} alt="" />
+        </div>
         <div className="post-detail_header">
-          <PostWriter userId = {3} />
           <div className="post-detail_buttons">
                 <Link to={`/posts/writer/edit`} className='btn sn primary'>Edit</Link>
                 <Link to={`/posts/writer/delete`} className='btn sn danger'>Delete</Link>
           </div>
-        </div>
-        <div className="post-detail_thumbnail">
-          <img src={posts.thumbnail} alt="" />
+          <PostWriter userId = {3} />
+          
         </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti quasi omnis unde nulla quae expedita ducimus veniam, illo earum ipsam facere rem repellat aliquid similique illum, saepe beatae. Omnis doloremque placeat adipisci et distinctio eveniet? Praesentium omnis cupiditate repellat, accusamus ad natus perferendis quidem perspiciatis quasi harum aut amet.

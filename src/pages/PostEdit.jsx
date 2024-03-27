@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import {POST_CATEGORIES, modules, formats} from '../data.js'
+import {DUMMY_CATEGORY} from '../data/categorydata.js'
+import {modules, formats} from '../data/otherdata.js'
 
 import ReactQuill from 'react-quill';
 import  'react-quill/dist/quill.snow.css'
@@ -24,7 +25,7 @@ function PostEdit() {
           <select name="category" id="" value={category} onChange={e => setCategory(e.target.value)}>
             <option value="" disabled>Select Category</option>
             {
-                POST_CATEGORIES.map(cat => <option key={cat}>{cat}</option>)
+                DUMMY_CATEGORY.map(cat => <option key={cat}>{cat}</option>)
             }
           </select>
             <ReactQuill modules={modules} format={formats} value={description} onChange={setDescription} />

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Layout from './components/Layout';
 import Writer from './pages/Writer';
+import Category from './pages/Category';
 import WriterPosts from './pages/WriterPosts';
 import CategoryPosts from './pages/CategoryPosts';
 import Dashboard from './pages/Dashboard';
@@ -35,7 +36,8 @@ const router = createBrowserRouter([{
     {path: "posts/categories/:id", element: <CategoryPosts/>},
     {path: "posts/writer/:id", element: <WriterPosts/>},
     {path: "dashboard/:id", element: <Dashboard/>},
-    // {path: "logout", element: <Logout/>},
+    {path: "logout", element: <Logout/>},
+    {path: "category", element: <Category/> }
   ]
 }])
 const root = ReactDOM.createRoot(document.getElementById('root'));

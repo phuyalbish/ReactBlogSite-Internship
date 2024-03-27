@@ -1,5 +1,5 @@
 import React,  { useState, useEffect } from 'react'
-import {DUMMY_WRITER} from '../data.js'
+import {DUMMY_WRITER} from '../data/writerdata.js'
 
 import { Link } from 'react-router-dom';
 

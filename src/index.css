@@ -110,6 +110,7 @@ section{
   font-size:  0.8rem;
   padding: 0.3rem 0.7rem;
   font-weight: 400;
+  background: #d4d3d3;
 }
 .btn.danger {
   background: var(--colorred);
@@ -198,8 +199,9 @@ nav{
 
 footer{
   background: var(--colorgray-9);
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding: 3rem;
+  padding-bottom: 1rem !important;
 }
 
 .footer_categories{
@@ -208,8 +210,9 @@ footer{
     align-items:center;
     justify-content: center;
     gap:1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
+
 }
 .post__footer{
   display:flex;
@@ -235,7 +238,40 @@ footer{
 }
 
 
+.mainFooterInfo{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
 
+}
+.footer_outer{
+  width:30%;
+}
+.footer_outer h2,.footer_outer p, .footer-icon{
+  color:#fff;
+}
+.footer-icon{
+  font-size: 1.6rem;
+}
+.footer_outer{
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+}
+.inner_footer{
+  display:flex;
+  gap:1rem;
+}
+.about_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.about_footer p{
+  text-align: end;
+}
 /* .................HOME.................... */
 
 /* ...................POST..................... */
@@ -249,7 +285,8 @@ footer{
 }
 .post {
     flex-wrap: wrap;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
     background: var(--colorwhite);
     border:1px solid  var(--colorborder);
     border-radius: var(--radius-4);
@@ -257,10 +294,10 @@ footer{
     padding-bottom:  2rem;
     transition: var(--transition);
     cursor: default;
-    width:300px;
+    width:310px;
 }
 .writer{
-flex-wrap: wrap;
+    flex-wrap: wrap;
     background: var(--colorwhite);
     border:1px solid  var(--colorborder);
     border-radius: var(--radius-4);
@@ -279,6 +316,17 @@ flex-wrap: wrap;
   height: 16rem;
   
 }
+
+.img_and_category{
+      display:relative;
+      margin-bottom: 2rem;
+}
+.img_and_category a{
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 0.7rem;
+}
+
 .post_thumbnail_main_img{
   height:300px;
 }
@@ -359,7 +407,7 @@ flex-wrap: wrap;
   gap:2rem;
   margin-bottom: 20px;
 }
-.titleWithBack a{
+.titleWithBack a, .imgandinfo a{
   font-size: 2rem;
   padding-top: 10px;
 }
@@ -384,7 +432,7 @@ input, select, textarea{
   resize: none;
 }
 .form_error-message{
-  display:hidden;
+  display:hidden !important;
   background: var(--colorred);
   color: var(--colorwhite);
   font-size: 0.8rem;
@@ -399,6 +447,7 @@ input, select, textarea{
   height:calc(100vh - 12rem);
   display:grid;
   place-items: center;
+  margin-bottom: 8rem;
 }
 
 .register h2, .logn h2, .create-post h2{
@@ -449,6 +498,49 @@ input, select, textarea{
   border: 0.3rem solid var(--colorbackground);
 
 }
+
+
+
+.writerInfo-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  width:80vw;
+  margin-inline:auto ;
+}
+.writerInfo-container img{
+  width:8rem;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 2px solid var(--colorborder);
+}
+.imgandinfo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:1rem;
+}
+.visitbuttons{
+  display: flex;
+  gap:2rem;
+}
+
+
+.categoriesOfWriter{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
 /* Profile */
 
 
@@ -568,6 +660,10 @@ input, select, textarea{
 /* ....................Media Queries....................... */
 
 @media screen and (max-width: 800px){
+
+  .post{
+    flex-grow: 1;
+  }
   h1{
     font-size: 1.5rem;
 
@@ -658,5 +754,10 @@ input, select, textarea{
 
   .dashboard_post{
     flex-direction: column;
+  }
+  .writerInfo-container{
+    flex-direction: column;
+    gap: 2rem;
+    
   }
 }
