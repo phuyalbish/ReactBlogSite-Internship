@@ -6,8 +6,7 @@ import { FaBars } from "react-icons/fa6";
 import { MdOutlineNightlight } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import DarkMode  from './DarkMode/DarkMode'
 
 import {AiOutlineClose} from "react-icons/ai";
 
@@ -22,17 +21,6 @@ const Header = () => {
     }
   }
 
-
-   const [isNightMode, setIsNightMode] = useState(false)
-  
-  // const setNightHandler = () => {
-  //   if(window.innerWidth < 800){
-  //     setIsNavShowing(false);
-  //   }else{
-  //     setIsNavShowing(true);
-  //   }
-  // }
-  
   return (
     
     <nav>
@@ -51,11 +39,9 @@ const Header = () => {
             
             <li><Link to="/create"  onClick={closeNavHandler}>Create Post</Link></li>
             <li><Link to="/logout"  onClick={closeNavHandler}>Logout</Link></li>
-            <li className="nightlightli" onClick={() => setIsNightMode(!isNightMode)}>
-              {
-                isNightMode ? <MdOutlineLightMode class="NightLight" onClick={LightMode}/> : <MdOutlineNightlight class="NightLight" onClick={NightMode}/>
-              }
-              </li>
+            <li>
+           <DarkMode /></li>
+            
               
             <li><Link to="/profile/Bishal"  onClick={closeNavHandler}><img src={Profile} className="profile_img" alt="" /></Link></li>
         </ul>}
@@ -66,14 +52,13 @@ const Header = () => {
     </nav>
   )
 }
-const LightMode = () => {
-      
-}
 
-const NightMode = () => {
-    
-}
 
+const changeColor = () => {
+    const root = document.documentElement;
+    root.style.setProperty('--main-color', 'red');
+    // setColor('red'); // Update state variable if needed
+  };
 
 
 

@@ -31,7 +31,7 @@ const UserProfilePage = () => {
       </div>
       <h1>Bishal Phuyal</h1>
       <form action="" className="form profile_form">
-            <p className="form_error-message">This is a n error message</p>
+            {/* <p className="form_error-message">This is a n error message</p> */}
             <input type="text" placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} name="name" id="name" />
             <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} name="name" id="name" />
             <input type="password" placeholder="Current Password" value={currenttpassword} onChange={e => setCurrentPassword(e.target.value)} name="name" id="name" />

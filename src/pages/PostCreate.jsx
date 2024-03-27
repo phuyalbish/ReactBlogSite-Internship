@@ -11,7 +11,6 @@ function PostCreate() {
   const [description, setDescription] = useState('')
   const [thumbnail, setThumbnail] = useState('')
 
-
   return (
     <section className="create-post">
       <div className="container">
@@ -24,7 +23,7 @@ function PostCreate() {
           <select name="category" id="" value={category} onChange={e => setCategory(e.target.value)}>
             <option value="" disabled>Select Category</option>
             {
-                DUMMY_CATEGORY.map(cat => <option key={cat}>{cat}</option>)
+                DUMMY_CATEGORY.map(cat => <option key={cat}>{cat.name}</option>)
             }
           </select>
             <ReactQuill modules={modules} format={formats} value={description} onChange={setDescription} />

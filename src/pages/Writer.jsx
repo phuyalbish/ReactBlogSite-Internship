@@ -10,7 +10,7 @@ function Writer() {
   const [writer, setWriter] = useState(DUMMY_WRITER);
   
   return (
-          <section className="authors">
+      <section className="authors">
       {writer.length > 0 ? <div className="container writers_container">
       {
           

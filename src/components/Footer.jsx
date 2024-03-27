@@ -59,7 +59,7 @@ function Footer() {
 
  <div className="about_footer footer_outer">
       <h2>About Us;</h2>
-      <p>Webodle Inc.  is the  common place for web-developers and clients. Join webodle family to showcase your talent.  </p>
+      <p>Webodle Inc.  is the  common place for reading and posting interesting blogs. Join webodle family to showcase your talent.  </p>
       <h2>Webodle Inc</h2>
  
  </div>
