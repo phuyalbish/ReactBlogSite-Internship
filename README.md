@@ -59,14 +59,6 @@ https://jsonformatter.org/
 ![Screenshot_27-3-2024_202954_localhost](https://github.com/phuyalbish/WebodleBlogSiteFrontEndFull/assets/104910055/a7c7c328-75c8-4ed8-b190-cbd22aa61b14)
 ![Screenshot_27-3-2024_202936_localhost](https://github.com/phuyalbish/WebodleBlogSiteFrontEndFull/assets/104910055/1b472006-0f0f-42fd-961e-a8e425fa8cea)
 
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
 ## Features
 
 - Light/dark mode toggle
