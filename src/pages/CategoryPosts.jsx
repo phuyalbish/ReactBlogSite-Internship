@@ -26,6 +26,5 @@ return (
       }
     </section>
   )
-
 }
 export default CategoryPosts

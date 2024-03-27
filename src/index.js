@@ -18,7 +18,6 @@ import SignUpPage from './pages/SignUpPage';
 import UserProfilePage from './pages/UserProfilePage';
 import ErrorPage from './pages/ErrorPage';
 
-
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const router = createBrowserRouter([{
   path:"/",

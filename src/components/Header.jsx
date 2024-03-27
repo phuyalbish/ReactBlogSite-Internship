@@ -48,14 +48,7 @@ const Header = () => {
         {isNavShowing && <ul className="navbar_menu"> 
             <li><Link to="/writer"  onClick={closeNavHandler}>Writers</Link></li>
             <li><Link to="/writer"  onClick={closeNavHandler}>Categories</Link></li>
-            <li><DropdownButton id="dropdown-basic-button" title="Dropdown button">
-              <ul>
-                <li><Dropdown.Item href="#/action-1">Action</Dropdown.Item></li>
-              <li><Dropdown.Item href="#/action-2">Another action</Dropdown.Item></li>
-              <li><Dropdown.Item href="#/action-3">Something else</Dropdown.Item></li>
-              </ul>
-            </DropdownButton>
-            </li>
+            
             <li><Link to="/create"  onClick={closeNavHandler}>Create Post</Link></li>
             <li><Link to="/logout"  onClick={closeNavHandler}>Logout</Link></li>
             <li className="nightlightli" onClick={() => setIsNightMode(!isNightMode)}>

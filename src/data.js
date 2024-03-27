@@ -1,26 +1,4 @@
-   
-import Thumb1 from './images/thumb1.jpg';
-import Thumb2 from './images/thumb2.jpg';
-import Thumb3 from './images/thumb3.jpg';
-import Thumb4 from './images/thumb4.jpg';
-import Thumb5 from './images/thumb5.jpg';
-import Thumb6 from './images/thumb6.jpg';
-import Thumb7 from './images/thumb7.jpg';
-import Thumb8 from './images/thumb8.jpg';
-import Thumb9 from './images/thumb9.jpg';
-import Thumb10 from './images/thumb10.jpg';
-
-import writer10 from './images/profile10.jpg';
-import writer1 from './images/profile1.jpg';
-import writer2 from './images/profile2.jpg';
-import writer3 from './images/profile3.jpg';
-import writer4 from './images/profile4.jpg';
-import writer5 from './images/profile5.jpg';
-import writer6 from './images/profile6.jpg';
-import writer7 from './images/profile7.jpg';
-import writer8 from './images/profile8.jpg';
-import writer9 from './images/profile9.jpg';
-
+import {Thumb1, Thumb2, Thumb3, Thumb4, Thumb5, Thumb6, Thumb7, Thumb8, Thumb9, Thumb10,  writer1 , writer2, writer3, writer4, writer5, writer6,writer7, writer8, writer9,writer10} from './images/index.js'
 export const POST_CATEGORIES = ["Agriculture", "Business", "Education", "Entertainment", "Art", "Investment", "Uncategorized"]
 
   export const modules = {
