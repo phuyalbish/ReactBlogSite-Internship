@@ -28,18 +28,17 @@ return (
     <section className="posts">
 
         <div className="writerInfo-container">
-            <div className="imgandinfo">
+          <div className="imgandinfo">
            <Link onClick={() => navigate(-1)}><IoMdArrowRoundBack /></Link>
-              <img src={writer.thumbnail} alt=""  />
+            <img src={writer.thumbnail} alt=""  />
             <div className="writerinfo">
               <h3>{writer.name}</h3>
-            <p>@{writer.username}</p><p>{writer.post} posts</p>
-              <div className="categoriesOfWriter">
-                {userCategories.map((category) => (
-                  <Link to={`/posts/categories/${category}`}><button className='btn sm'>{category}</button></Link>
-                ))}
-                            
-              </div>
+              <p>@{writer.username}</p><p>{writer.post} posts</p>
+                    <div className="categoriesOfWriter">
+                      {userCategories.map((category) => (
+                        <button to={`/posts/categories/${category}`} className='btn sm'>{category}</button>
+                      ))}       
+                    </div>
             </div>
             </div>
            <div className="visitbuttons">
