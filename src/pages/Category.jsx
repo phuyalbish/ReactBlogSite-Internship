@@ -16,7 +16,7 @@ function Category() {
       category.map(({id, name, thumbnail, des}) => {
             
          const truncateDes = des.length > 40 ? des.substring(0, 40) + '...' : des;   
-        return <Link key={id} to={`/posts/categories/${name}`} className='author'>
+        return <Link key={id} to={`/posts/categories/${name}`} className='category'>
           <div className="author_avatar">
             <img src={`${thumbnail}`} alt={`Image of ${name}`} />
           </div>

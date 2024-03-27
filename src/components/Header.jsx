@@ -5,6 +5,7 @@ import Profile  from '../images/profile8.jpg';
 import { FaBars } from "react-icons/fa6";
 import { MdOutlineNightlight } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import { IoCreateOutline } from "react-icons/io5";
 
 import DarkMode  from './DarkMode/DarkMode'
 
@@ -33,18 +34,12 @@ const Header = () => {
         
             <h3>Webodle Blog</h3>
         </div>
-        {isNavShowing && <ul className="navbar_menu"> 
-            <li><Link to="/writer"  onClick={closeNavHandler}>Writers</Link></li>
-            <li><Link to="/category"  onClick={closeNavHandler}>Category</Link></li>
-            
-            <li><Link to="/create"  onClick={closeNavHandler}>Create Post</Link></li>
-            <li><Link to="/logout"  onClick={closeNavHandler}>Logout</Link></li>
-            <li>
-           <DarkMode /></li>
-            
-              
-            <li><Link to="/profile/Bishal"  onClick={closeNavHandler}><img src={Profile} className="profile_img" alt="" /></Link></li>
-        </ul>}
+        {isNavShowing && <div className="navbar_menu"> 
+            <Link to="/writer" className="nav_menu_inner" onClick={closeNavHandler}>Writers</Link>
+            <Link to="/create" className="nav_menu_inner" onClick={closeNavHandler}><IoCreateOutline className='nav_create-btn'/> Create</Link>
+            <DarkMode className="nav_menu_inner"/>
+            <Link to="/profile/Bishal" className="nav_menu_inner" onClick={closeNavHandler}><img src={Profile} className="profile_img" alt="" /></Link>
+        </div>}
         <button className="nav_toggle-btn" onClick = {() => setIsNavShowing(!isNavShowing)}>
           {isNavShowing ? <AiOutlineClose/> : <FaBars/>}
           </button>

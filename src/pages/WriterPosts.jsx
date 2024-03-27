@@ -29,7 +29,7 @@ return (
 
         <div className="writerInfo-container">
           <div className="imgandinfo">
-           <Link onClick={() => navigate(-1)}><IoMdArrowRoundBack /></Link>
+           <Link onClick={() => navigate(-1)} className='linktoback'><IoMdArrowRoundBack /></Link>
             <img src={writer.thumbnail} alt=""  />
             <div className="writerinfo">
               <h3>{writer.name}</h3>

@@ -15,7 +15,6 @@ const UserProfilePage = () => {
   return (
     <section className="profile">
       <div className="container profile_container">
-        <Link to={`/dashboard/Bishal`} className='btn'>My Posts</Link>
         <div className="profile_details">
           <div className="avatar_wrapper">
               <div className="profile_avatar">
@@ -30,6 +29,8 @@ const UserProfilePage = () => {
         </div>
       </div>
       <h1>Bishal Phuyal</h1>
+      
+        <Link to={`/dashboard/Bishal`} className='btn'>My Posts</Link>
       <form action="" className="form profile_form">
             {/* <p className="form_error-message">This is a n error message</p> */}
             <input type="text" placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} name="name" id="name" />
@@ -37,7 +38,10 @@ const UserProfilePage = () => {
             <input type="password" placeholder="Current Password" value={currenttpassword} onChange={e => setCurrentPassword(e.target.value)} name="name" id="name" />
             <input type="password" placeholder="New Password" value={newpassword} onChange={e => setNewPassword(e.target.value)} name="name" id="name" />
             <input type="password" placeholder="Confirm New Password" value={confirmnewpassword} onChange={e => setConfirmNewPassword(e.target.value)} name="name" id="name" />
-            <button type="submit" className='btn primary'>Update Details</button>
+            <div className="userProfile-buttons">
+              <button type="submit" className='btn primary'>Update Details</button>
+              <Link to="/logout" ><button className="btn danger">Logout</button></Link>
+            </div>
       </form>
       </div>
     </section>

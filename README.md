@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-BlogWebsite Webodle
+This is a blog post site totally built on react and node. This has a user friendly and decent looking UI.  I have also implemented Dark/Light mode in this site.  This site can create posts, filter blogs with writers and categories.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Hi, I'm Bishal Phuyal 👋
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Authors
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [@phuyalbish](https://www.github.com/phuyalbish)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Reference
 
-### `npm run build`
+For Posts Data:
+```http
+  https://jsonplaceholder.typicode.com/posts
+```
+For Writers Data:
+```http
+  https://jsonplaceholder.typicode.com/users
+```
+I didn't directly fetched the data from this remote json file. instead i used Json Formatter to update the required data.
+```http
+https://jsonformatter.org/
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Color Reference
 
-### `npm run eject`
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| --colorgray-7 |#fff|
+|--colorgray-9|#fff|
+|colorwhite|#252542|
+|color-boxshadow|rgba(255, 255, 255, 0.089)|
+|postcolorwhite| #0c0c22|
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
+![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
+![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
+![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
 
-## Learn More
+## Environment Variables
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run this project, you will need to add the following environment variables to your .env file
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`API_KEY`
 
-### Code Splitting
+`ANOTHER_API_KEY`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Light/dark mode toggle
+- Category Page
+- Writer Page
+- Create Blog Post
+- Profile Page
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Run
 
-### Advanced Configuration
+Downliad this project with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+    git clone https://github.com/phuyalbish/WebodleBlogSiteFrontEndFull
+    
+```
+```bash
+    cd WebodleBlogSiteFrontEndFull
+```
+```bash
+    npm install
+```
+```bash
+    npm run dev
+```
+    
+## Feedback
 
-### Deployment
+If you have any feedback, please reach out to me at mrvishope@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+
+ - [Code Bless You](https://www.youtube.com/watch?v=Uz35Qiia84g&t=453s)
+ - [Chai aur Code | Javascript series](https://www.youtube.com/@chaiaurcode)
+ - [Egator](https://www.youtube.com/watch?v=e_lJYRaMo60)
+

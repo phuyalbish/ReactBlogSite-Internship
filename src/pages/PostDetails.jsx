@@ -18,16 +18,20 @@ const { id } = useParams();
         setPosts(filteredPost);
     }, [postid]);
 
-  const userId = posts.userId;
+    const userId = posts.userId;
+    let capitalizedTitle = posts.title;
+    let capitalizedBody = posts.body;
+  capitalizedTitle = posts?.title?.charAt(0).toUpperCase() + posts?.title?.slice(1);
+  capitalizedBody = posts?.body?.charAt(0).toUpperCase() + posts?.body?.slice(1);
   return (
     <section className="post-detail">
       <div className="container post-detail_container">
         <div className="titleWithBack">
-          <Link onClick={() => navigate(-1)}><IoMdArrowRoundBack /></Link>
+          <Link onClick={() => navigate(-1)} className='linktoback'><IoMdArrowRoundBack /></Link>
 
         <div className="title">
-          <h1>{posts.title}</h1>
-        <p>{posts.body}</p>
+          <h1>{capitalizedTitle}</h1>
+        <p>{capitalizedBody}</p>
         </div>
         </div>
         

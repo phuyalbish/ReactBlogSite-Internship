@@ -127,9 +127,9 @@ button.btn.sm {
   font-size:  0.8rem;
   padding: 0.3rem 0.7rem;
   font-weight: 400;
-  background: var(--colorprimary);
-  color:#fff;
-  /* border: 1px solid var(--colorgray-9); */
+  background: transparent;
+  color:var(--colorgray-7);
+  border: 1px solid var(--colorgray-9);
 }
 button.btn.primary{
   background: var(--colorprimary);
@@ -195,6 +195,7 @@ nav{
   width:2rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  align-self: flex-end;
   border: 1px solid var(--colorborder)
 }
 
@@ -265,8 +266,10 @@ footer{
 
 .mainFooterInfo{
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
   gap:1rem;
+  width:100%;
   padding-bottom: 1rem;
   justify-content: space-evenly;
 
@@ -519,6 +522,19 @@ option{
   transition: var(--transition);
 
 }
+
+
+.category{
+  background: var(--postcolorwhite);
+  padding:1rem;
+  width:320px;
+  border: 1px solid var(--colorborder);
+  border-radius: var(--radius-3);
+  display: flex;
+  gap:1rem;
+  transition: var(--transition);
+
+}
 .author:hover{
   box-shadow: 0 1rem 1.5rem var(--color-boxshadow);
 
@@ -632,7 +648,8 @@ option{
   cursor: pointer;
   padding:0;
   font-size: 1.5rem;
-  background: var(--colorprimary);
+  background: var(--colorgray-7);
+  border: 1px solid var(--colorgray-9);
 }
 .profile_details h1{
   margin-top: 1.5rem;
@@ -642,7 +659,15 @@ option{
   margin-inline: auto;
   width: var(--form-width);
 }
+.userProfile-buttons{
 
+  display: flex;
+  gap:2rem;
+  
+}
+.userProfile-buttons a .btn{
+  color:#fff;
+}
 
 
 
@@ -695,8 +720,12 @@ option{
 
 
 
-.nav_toggle-btn{
+.nav_toggle-btn, .nav_create-btn{
   font-size: 20px;
+  color:var(--colorgray-9);
+}
+.nav_toggle-btn{
+
   display:none;
 }
 
@@ -725,7 +754,7 @@ option{
     justify-content: space-evenly;
   }
   .navbar_menu{
-      box-shadow: 0 1rem 1.5rem var(--color-boxshadow);
+    box-shadow: 0 1rem 1.5rem var(--color-boxshadow);
     background: var(--colorwhite);
     position:absolute;
     top: 5rem;
@@ -739,11 +768,10 @@ option{
     border-radius: var(--radius-4);
 
   }
-  .navbar_menu li{
+  .navbar_menu .nav_menu_inner{
     width: 100%;
-    border: 1px solid var(--colorborder);
     border-radius: var(--radius-4);
-    margin:2px;
+    margin:5px;
     padding:5px;
     animation:dropdown 500ms ease forwards;
     opacity: 0;
@@ -751,7 +779,7 @@ option{
     transform-origin: top;
 
   }
-  .navbar_menu li a {
+  .navbar_menu a {
     background: transparent;
     background:var(--color-white);
     padding: 0.85rem 2.5rem;
@@ -803,6 +831,41 @@ option{
     /* gap: 2rem; */
     
   }
+    .mainFooterInfo{
+      flex-direction: column;
+      align-items: center;
+      gap:2rem;
+    }
+
+    .footer_outer{
+      width:100%;
+      justify-content: flex-start;
+    }
+
+
+    .categoriesOfWriter{
+      gap:5px;
+    }
+
+    .about_footer{
+        align-items: flex-start;
+    }
+    .about_footer p{
+      text-align: start;
+    }
+    .category{
+      flex-direction: column;
+    }
+    .imgandinfo{
+      flex-direction: column;
+    }
+    .writerinfo{
+      align-items: center;
+    }
+    .linktoback{
+          display: none;
+    }
+
 }
 
 
