@@ -6,10 +6,10 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
 function PostEdit() {
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("Uncategorized");
-  const [description, setDescription] = useState("");
-  const [thumbnail, setThumbnail] = useState("");
+  // const [title, setTitle] = useState("");
+  // const [category, setCategory] = useState("Uncategorized");
+  // const [description, setDescription] = useState("");
+  // const [thumbnail, setThumbnail] = useState("");
 
   return (
     <section className="edit-post">
@@ -20,36 +20,37 @@ function PostEdit() {
           <input
             type="text"
             placeholder="Title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            value=""
+            // onChange={(e) => setTitle(e.target.value)}
             autoFocus
           />
-          <select
+          {/* <select
             name="category"
             id=""
-            value={category}
+            value=""
             onChange={(e) => setCategory(e.target.value)}
-          >
-            <option value="" disabled>
+          > */}
+          {/* <option value="" disabled>
               Select Category
             </option>
             {DUMMY_CATEGORY.map((cat) => (
               <option key={cat}>{cat}</option>
             ))}
-          </select>
-          <ReactQuill
+          </select> */}
+          {/* <ReactQuill
             modules={modules}
             format={formats}
             value={description}
             onChange={setDescription}
-          />
-          <input
+          /> */}
+          {/* <input
             type="file"
             name="file"
             id=""
-            onChange={(e) => setThumbnail(e.target.files[0])}
+            // onChange={(e) => setThumbnail(e.target.files[0])
+            }
             accept="png, jpg, jpeg"
-          />
+          /> */}
           <button type="submit" className="btn primary">
             Edit
           </button>

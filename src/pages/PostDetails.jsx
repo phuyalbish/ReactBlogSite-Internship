@@ -43,10 +43,10 @@ const PostDetails = () => {
         </div>
         <div className="post-detail_header">
           <div className="post-detail_buttons">
-            <Link to={`/posts/writer/edit`} className="btn sn primary">
+            <Link to={`/posts/${posts.id}/edit`} className="btn sn primary">
               Edit
             </Link>
-            <Link to={`/posts/writer/delete`} className="btn sn danger">
+            <Link to={`/posts/${posts.id}/delete`} className="btn sn danger">
               Delete
             </Link>
           </div>
