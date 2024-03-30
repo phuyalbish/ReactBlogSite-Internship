@@ -33,7 +33,7 @@ const WriterPosts = () => {
           <img src={writer.thumbnail} alt="" />
           <div className="writerinfo">
             <h3>{writer.name}</h3>
-            <p>@{writer.username}</p>
+            <p>@{writer.address && writer.address.geo && writer.address.geo.lat}</p>
             <p>{writer.post} posts</p>
             <div className="categoriesOfWriter">
               {userCategories.map((category) => (

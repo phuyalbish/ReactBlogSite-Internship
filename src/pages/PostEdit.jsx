@@ -15,7 +15,7 @@ function PostEdit() {
     <section className="edit-post">
       <div className="container">
         <h2>Edit Post</h2>
-        <p className="form_error-message">This is an error message</p>
+        {/* <p className="form_error-message">This is an error message</p> */}
         <form action="" className="form edit-post_form">
           <input
             type="text"
@@ -37,12 +37,12 @@ function PostEdit() {
               <option key={cat}>{cat}</option>
             ))}
           </select> */}
-          {/* <ReactQuill
+          <ReactQuill
             modules={modules}
             format={formats}
-            value={description}
-            onChange={setDescription}
-          /> */}
+            value=""
+            // onChange={setDescription}
+          />
           {/* <input
             type="file"
             name="file"

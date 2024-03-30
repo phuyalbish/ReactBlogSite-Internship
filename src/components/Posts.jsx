@@ -10,6 +10,7 @@ const Posts = () => {
   //     .then(data => setPosts(data))
   //     .catch(error => console.error('Error fetching data:', error));
   // }, []);
+
   return (
     <section className="posts">
       {posts.length > 0 ? (

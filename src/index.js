@@ -14,12 +14,12 @@ import PostDelete from "./pages/PostDelete";
 import PostDetails from "./pages/PostDetails";
 import PostEdit from "./pages/PostEdit";
 import PostCreate from "./pages/PostCreate";
-import Posts from "./components/Posts";
 import SignUpPage from "./pages/SignUpPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import ErrorPage from "./pages/ErrorPage";
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +34,7 @@ const router = createBrowserRouter([
       { path: "posts/:id", element: <PostDetails /> },
       { path: "create", element: <PostCreate /> },
       { path: "posts/:id/edit", element: <PostEdit /> },
+      { path: "posts/:id/delete", element: <PostDelete /> },
       { path: "posts/categories/:id", element: <CategoryPosts /> },
       { path: "posts/writer/:id", element: <WriterPosts /> },
       { path: "dashboard/:id", element: <Dashboard /> },
